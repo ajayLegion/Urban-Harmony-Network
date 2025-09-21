@@ -21,7 +21,7 @@ Unlike existing IoT solutions that focus solely on monitoring (e.g., pollution a
 
 ## Technical Architecture
 
-- **Hardware**: Arduino/Raspberry Pi-based sensors with LoRaWAN for long-range, low-power communication. Estimated pilot cost: \~$5,000 for 10-20 nodes.
+- **Hardware**: Arduino/Raspberry Pi-based sensors with LoRaWAN for long-range, low-power communication 💡 Concept Stage.
 - **Software**: Python backend with NumPy/Pandas for data processing, Scikit-learn/TensorFlow for ML, and 5G/6G integration for low-latency responses.
 - **Security**: Edge processing, zero-knowledge proofs, and blockchain for privacy and trust.
 - **Pilot Plan**: Deploy in a high-density urban area (e.g., park or neighborhood), test with simulated data, and scale with volunteer feedback.
@@ -34,18 +34,10 @@ Unlike existing IoT solutions that focus solely on monitoring (e.g., pollution a
 2. **Software Setup**:
 
    ```bash
-   git clone https://github.com/urban-harmony-network/uhn.git
+   git clone https://github.com/ajayLegion/Urban-Harmony-Network.git
    cd uhn
    pip install -r requirements.txt
    ```
-   - Configure backend with `config.py` for sensor endpoints and AI models.
-3. **Run**:
-
-   ```bash
-   python main.py
-   ```
-   - Access dashboard at `http://localhost:5000` for real-time analytics.
-
 ## Usage
 
 - **Monitor**: View real-time environmental and stress data via the web dashboard.
@@ -55,9 +47,9 @@ Unlike existing IoT solutions that focus solely on monitoring (e.g., pollution a
 
 ## Roadmap
 
-- **Phase 1**: Prototype 10-node pilot in a small urban area (Q1 2026).
-- **Phase 2**: Expand to 100 nodes with community app integration (Q3 2026).
-- **Phase 3**: Open-source release and cross-city collaboration via blockchain (2027).
+- **Phase 1**: Prototype 10-node pilot in a small urban area.
+- **Phase 2**: Expand to 100 nodes with community app integration.
+- **Phase 3**: Open-source release and cross-city collaboration via blockchain.
 
 ## Contributing
 
