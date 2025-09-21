@@ -67,4 +67,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Contact
 
-# For inquiries, reach out via GitHub Issues or email at `contact@uhn-project.org`.
+# For inquiries, reach out via GitHub Issues or email at ``.
