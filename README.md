@@ -11,7 +11,7 @@ Urban living contributes to mental health issues, with air pollution linked to a
 ## Features
 
 - **Sensor Layer**: Collects data on air quality (PM2.5, CO2), noise, temperature, humidity, light pollution, crowd density, and urban green space health using low-cost IoT devices.
-- **AI Analytics**: Uses machine learning (TensorFlow, Scikit-learn) to predict mental health "hotspots" by analyzing environmental and anonymized biometric trends.
+- **AI Analytics**: Uses machine learning (Scikit-learn) to predict mental health "hotspots" by analyzing environmental and anonymized biometric trends.
 - **Intervention Layer**: Dynamically adjusts urban elements (e.g., cooling systems, lighting, nature sounds) and engages communities via app alerts and gamified incentives.
 - **Scalability & Privacy**: Leverages LoRaWAN for connectivity, edge computing for efficiency, blockchain for secure data sharing, and GDPR-compliant anonymization.
 
