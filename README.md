@@ -22,7 +22,7 @@ Unlike existing IoT solutions that focus solely on monitoring (e.g., pollution a
 ## Technical Architecture
 
 - **Hardware**: Arduino/Raspberry Pi-based sensors with LoRaWAN for long-range, low-power communication 💡 Concept Stage.
-- **Software**: Python backend with NumPy/Pandas for data processing, Scikit-learn/TensorFlow for ML, and 5G/6G integration for low-latency responses.
+- **Software**: Python backend with NumPy for data processing, Scikit-learn for ML, and 5G/6G integration for low-latency responses.
 - **Security**: Edge processing, zero-knowledge proofs, and blockchain for privacy and trust.
 - **Pilot Plan**: Deploy in a high-density urban area (e.g., park or neighborhood), test with simulated data, and scale with volunteer feedback.
 
