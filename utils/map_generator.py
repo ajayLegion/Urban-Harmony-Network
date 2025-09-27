@@ -9,7 +9,7 @@ class MapGenerator:
     """Generates interactive maps for urban sensor network visualization."""
     
     def __init__(self):
-        self.default_center = [40.7128, -74.0060]  # New York City
+        self.default_center = [12.9716, 77.5946]  # Bangalore
         self.default_zoom = 12
         self.color_schemes = {
             'stress': {

@@ -151,13 +151,15 @@ fig.add_trace(go.Scatter(
     marker=dict(size=6)
 ))
 
-# Add current time marker
-fig.add_vline(
-    x=time_points[0].isoformat(),  # Ensure x is a string, not a datetime object
-    line_dash="dash",
-    line_color="blue",
-    annotation_text="Current Time"
-)
+# Add current time marker as a scatter trace
+fig.add_trace(go.Scatter(
+    x=[time_points[0], time_points[0]],
+    y=[0, 10],
+    mode='lines',
+    line=dict(color='blue', dash='dash', width=2),
+    name='Current Time',
+    showlegend=False
+))
 
 fig.update_layout(
     title="24-Hour Stress Level Predictions with Confidence Intervals",

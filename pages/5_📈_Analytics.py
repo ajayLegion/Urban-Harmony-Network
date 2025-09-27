@@ -55,7 +55,13 @@ col1, col2, col3, col4 = st.columns(4)
 
 # Calculate insights
 active_sensors = [s for s in current_data if s['status'] == 'active']
-city_stress = np.mean([st.session_state.ml_model.predict_sensor_stress(s) for s in active_sensors])
+if active_sensors:
+    try:
+        city_stress = np.mean([st.session_state.ml_model.predict_sensor_stress(s) for s in active_sensors])
+    except (ValueError, TypeError):
+        city_stress = 5.0  # Default neutral stress level
+else:
+    city_stress = 5.0  # Default neutral stress level when no active sensors
 
 # Generate trend data
 days_back = 30 if analysis_period == "Last Month" else 7 if analysis_period == "Last Week" else 1
@@ -66,7 +72,20 @@ for i in range(days_back):
     trend_data.append({'date': date, 'stress': max(0, min(10, daily_stress))})
 
 trend_df = pd.DataFrame(trend_data)
-stress_trend = np.polyfit(range(len(trend_df)), trend_df['stress'], 1)[0]
+
+# Calculate stress trend with error handling
+try:
+    # Ensure we have enough data points and no NaN values
+    if len(trend_df) >= 2 and not trend_df['stress'].isna().any():
+        stress_trend = np.polyfit(range(len(trend_df)), trend_df['stress'], 1)[0]
+    else:
+        stress_trend = 0.0
+except (np.linalg.LinAlgError, ValueError):
+    # Fallback to simple slope calculation if polyfit fails
+    if len(trend_df) >= 2:
+        stress_trend = (trend_df['stress'].iloc[-1] - trend_df['stress'].iloc[0]) / len(trend_df)
+    else:
+        stress_trend = 0.0
 
 with col1:
     st.metric(
@@ -242,8 +261,14 @@ with col1:
         title="Average Stress Levels by Hour of Day",
         labels={'x': 'Hour of Day', 'y': 'Stress Level'}
     )
-    fig_hourly.add_hline(y=np.mean(stress_values), line_dash="dash", 
-                        annotation_text="Daily Average")
+    # Add horizontal line for daily average with error handling
+    try:
+        daily_avg = np.mean(stress_values) if stress_values else 5.0
+        fig_hourly.add_hline(y=daily_avg, line_dash="dash", 
+                            annotation_text="Daily Average")
+    except (ValueError, TypeError):
+        fig_hourly.add_hline(y=5.0, line_dash="dash", 
+                            annotation_text="Daily Average")
     st.plotly_chart(fig_hourly, use_container_width=True)
 
 with col2:
