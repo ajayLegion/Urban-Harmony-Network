@@ -2,7 +2,7 @@
 
 ## Overview
 
-The **Urban Harmony Network (UHN)** is a pioneering IoT ecosystem designed to combat urban mental health deterioration by creating adaptive, healthier city environments. UHN integrates real-time environmental and biometric data with AI-driven predictions and active interventions to mitigate stress caused by urban factors like pollution, noise, and isolation. This project addresses both current urban mental health challenges and future issues like climate-induced heatwaves and increasing urbanization, expected to impact over 1 billion people by 2030.
+The **Urban Harmony Network (UHN)** is a pioneering IoT with using api ecosystem designed to combat urban mental health deterioration by creating adaptive, healthier city environments. UHN integrates real-time environmental and biometric data with AI-driven predictions and active interventions to mitigate stress caused by urban factors like pollution, noise, and isolation. This project addresses both current urban mental health challenges and future issues like climate-induced heatwaves and increasing urbanization, expected to impact over 1 billion people by 2030.
 
 ## Problem Statement
 
