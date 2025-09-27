@@ -3,5 +3,5 @@ __pycache__/
 *.py[cod]
 *.pyo
 *.pyd
-.venv_new
+.venv
 .env
