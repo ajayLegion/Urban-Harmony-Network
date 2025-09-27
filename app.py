@@ -23,7 +23,7 @@ if 'sensor_network' not in st.session_state:
     st.session_state.ml_model = StressPredictionModel()
 
 # Main page header
-st.title("🏙️ Urban Harmony Network")
+st.title("Urban Harmony Network")
 st.markdown("### AI-Powered Urban Mental Health Monitoring System")
 
 # Sidebar controls
@@ -36,7 +36,7 @@ if auto_refresh:
     refresh_interval = st.sidebar.slider("Refresh interval (seconds)", 5, 60, 10)
 
 # Manual refresh button
-if st.sidebar.button("🔄 Refresh Data"):
+if st.sidebar.button("Refresh Data"):
     st.session_state.sensor_network.update_all_sensors()
     st.rerun()
 

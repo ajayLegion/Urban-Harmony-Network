@@ -45,12 +45,12 @@ class SensorNetwork:
     def _initialize_sensors(self) -> List[Dict[str, Any]]:
         """Initialize sensor network with realistic urban locations."""
         locations = [
-            "Central Park", "Times Square", "Brooklyn Bridge", "Wall Street",
-            "Soho District", "Greenwich Village", "Upper East Side", "Chinatown",
-            "Financial District", "Tribeca", "Lower East Side", "Midtown",
-            "Chelsea Market", "High Line Park", "Bryant Park", "Union Square",
-            "Madison Square", "Flatiron District", "East Village", "West Village"
+          "Electronic City", "Koramangala", "Indiranagar", "Jayanagar", "BTM Layout", 
+         "Marathahalli", "Banashankari", "Malleshwaram","Basavanagudi", "HSR Layout", 
+          "Yeshwantpur", "Hebbal","Bellandur", "Sarjapur Road", "Brigade Road", "MG Road", 
+          "Cunningham Road", "Vijayanagar",
         ]
+        
 
         sensors = []
         base_lat, base_lon = 12.9716, 77.5946  # Bangalore coordinates

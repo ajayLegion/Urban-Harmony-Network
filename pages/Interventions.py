@@ -8,7 +8,7 @@ from utils.sensor_simulation import SensorNetwork
 from utils.data_processor import DataProcessor
 from utils.ml_models import StressPredictionModel
 
-st.set_page_config(page_title="Interventions", page_icon="💡", layout="wide")
+st.set_page_config(page_title="Interventions", layout="wide")
 
 # Initialize session state
 if 'sensor_network' not in st.session_state:
