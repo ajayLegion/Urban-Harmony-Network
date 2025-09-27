@@ -208,13 +208,3 @@ st.markdown("---")
 st.markdown("**Urban Harmony Network** - Proactive urban mental health monitoring through IoT and AI")
 st.markdown(f"Last updated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
 
-# --- Flask App for API/Hello World ---
-# from flask import Flask
-# app = Flask(__name__)
-
-# @app.route('/')
-# def hello():
-#     return "Hello from Flask!"
-
-# if __name__ == '__main__':
-#     app.run(debug=True)
