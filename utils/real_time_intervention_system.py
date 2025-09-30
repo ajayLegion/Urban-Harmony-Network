@@ -9,7 +9,7 @@ from dataclasses import dataclass
 from enum import Enum
 import threading
 import time
-from .database_manager_sqlite import DatabaseManager
+from .database_manager import DatabaseManager
 
 class InterventionType(Enum):
     AIR_PURIFICATION = "air_purification"
