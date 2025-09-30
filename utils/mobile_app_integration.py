@@ -8,7 +8,7 @@ from enum import Enum
 import uuid
 import hashlib
 import jwt
-from .database_manager_sqlite import DatabaseManager
+from .database_manager import DatabaseManager
 
 class FeedbackType(Enum):
     ENVIRONMENTAL = "environmental"

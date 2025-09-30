@@ -4,7 +4,7 @@ import numpy as np
 from datetime import datetime, timedelta
 from typing import List, Dict, Any
 from utils.iot_data_aggregator import IoTDataAggregator
-from .database_manager_sqlite import DatabaseManager
+from .database_manager import DatabaseManager
 from .real_time_api_integration import RealTimeAPIIntegration
 
 # Initialize IoT Data Aggregator with Google Maps API
