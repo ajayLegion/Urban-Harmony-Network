@@ -12,7 +12,7 @@ from cryptography.hazmat.primitives.kdf.pbkdf2 import PBKDF2HMAC
 from web3 import Web3
 from eth_account import Account
 import requests
-from .database_manager_sqlite import DatabaseManager
+from .database_manager import DatabaseManager
 
 @dataclass
 class DataPackage:
