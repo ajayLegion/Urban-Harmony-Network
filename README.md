@@ -1,7 +1,4 @@
 # Urban Harmony Network
-
-![Urban Harmony Network Banner](https://via.placeholder.com/1200x300?text=Urban+Harmony+Network)  
-
 ## Overview
 
 Welcome to **Urban Harmony Network** – an innovative IoT&Api system designed to monitor and improve urban mental health by tracking environmental factors in real-time. Imagine a city where air quality, noise levels, crowd density, and more are constantly analyzed to predict stress hotspots and suggest interventions. This project turns that vision into reality, using sensors, AI, and blockchain to create healthier urban spaces.
