@@ -83,9 +83,6 @@ We use a mix of traditional and deep learning techniques to process and predict 
 - **Hardware Control**: Smart traffic lights, air purifiers, noise cancellation, and adaptive lighting.
 - **Connectivity**: LoRaWAN, cellular, WebSocket, REST APIs.
 
-### Mobile & APIs
-- **Firebase**: For push notifications.
-- **JWT & REST**: Secure mobile app integration.
 
 This stack ensures scalability, security, and real-time performance for urban-scale deployments.
 
